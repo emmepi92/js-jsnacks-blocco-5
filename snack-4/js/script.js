@@ -46,7 +46,7 @@ for (var x = 0; x < classe.length; x++) {
   classe[x].descrizione = prompt('Inserisci una descrizione per ' + classe[x].nome);
 }
 
-
+// i due for si possono anche unire 
 for (var x = 0; x < classe.length; x++) {
   result = '';
   for ( var key in classe[x]) {
