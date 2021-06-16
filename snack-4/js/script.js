@@ -47,6 +47,15 @@ for (var x = 0; x < classe.length; x++) {
   classe[x].descrizione = prompt('Inserisci una descrizione per ' + classe[x].nome + ' ' + classe[x].cognome);
 }
 
+//stampare in console.log la lista completa 
+for (var x = 0; x < classe.length; x++) {
+  
+  for ( var key in classe[x]) {
+    console.log(key, classe[x][key]);
+  }
+  
+}
+
 // i due for si possono anche unire 
 // soluzione da 'spacconi'
 for (var x = 0; x < classe.length; x++) {
