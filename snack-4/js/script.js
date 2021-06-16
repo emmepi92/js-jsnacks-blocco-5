@@ -43,7 +43,7 @@ var classe = [
 ];
 
 for (var x = 0; x < classe.length; x++) {
-  classe[x].descrizione = prompt('Inserisci una descrizione per ' + classe[x].nome);
+  classe[x].descrizione = prompt('Inserisci una descrizione per ' + classe[x].nome + ' ' + classe[x].cognome);
 }
 
 // i due for si possono anche unire 
