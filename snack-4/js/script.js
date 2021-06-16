@@ -21,6 +21,7 @@ Visualizzare nell’html questi dati in una forma tabellare.*/
 
 var result = '';
 var outputHtml = document.querySelectorAll('.students');
+var outputHtml2 = document.getElementById('result');
 var classe = [
   {
     nome: 'Pippo',
@@ -47,6 +48,7 @@ for (var x = 0; x < classe.length; x++) {
 }
 
 // i due for si possono anche unire 
+// soluzione da 'spacconi'
 for (var x = 0; x < classe.length; x++) {
   result = '';
   for ( var key in classe[x]) {
@@ -54,3 +56,14 @@ for (var x = 0; x < classe.length; x++) {
   }
   outputHtml[x].innerHTML += result;
 }
+
+// soluzione easy, ma più dinamica 
+// for (var x = 0; x < classe.length; x++) {
+//   result += '<tr>';
+//   for ( var key in classe[x]) {
+//     result += '<td>' + classe[x][key] + '</td>';
+//   }
+//   result += '</tr>';
+// }
+
+// outputHtml2.innerHTML += result;
